@@ -24,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
   setState(() {
 
   });
-  print(newsArt);
+  // print(newsArt);
 
   }
   @override
