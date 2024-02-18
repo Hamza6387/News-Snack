@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:news_snack/view/detail_view.dart';
-import 'package:news_snack/view/widget/newscontainer.dart';
 class NewsContainer extends StatelessWidget {
   String imgUrl;
   String newsHead;
@@ -28,16 +27,16 @@ class NewsContainer extends StatelessWidget {
           width:MediaQuery.of(context).size.width,
           fit:BoxFit.fitWidth,
           imgUrl),
-          Container(padding: EdgeInsets.symmetric(horizontal: 15),
+          Container(padding: const EdgeInsets.symmetric(horizontal: 15),
 
             child: Column(crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(height: 6),
-                Text(newsHead,style: TextStyle(fontSize: 20,fontWeight: FontWeight.w700,fontStyle: FontStyle.normal),),
-                SizedBox(height: 16),
-                Text(newsDes,style:TextStyle(fontSize: 14,fontWeight: FontWeight.normal,color: Colors.grey[38]) ,),
-                SizedBox(height: 16),
-                Text(newsCnt, style:TextStyle(fontSize: 14,fontWeight: FontWeight.normal) ,),
+               const SizedBox(height: 6),
+                Text(newsHead,style: const TextStyle(fontSize: 20,fontWeight: FontWeight.w700,fontStyle: FontStyle.normal),),
+                const SizedBox(height: 16),
+                Text(newsDes,style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal,color: Colors.grey[38]) ,),
+                const  SizedBox(height: 16),
+                Text(newsCnt, style:const TextStyle(fontSize: 14,fontWeight: FontWeight.normal) ,),
               ],
             ),
 
@@ -53,12 +52,12 @@ class NewsContainer extends StatelessWidget {
                   builder: (BuildContext context) =>  DetailViewScreen(newsUrl:newsUrl),
                 ),
                 );
-              }, child: Text(" Read more  ")),
+              }, child: const Text(" Read more  ")),
             ),
           ],
         ),
 
-          SizedBox(height: 25,),
+          const SizedBox(height: 25,),
       ],),
 
     );
